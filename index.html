@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maestro Palomero</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+    header {
+      background-color: #ec4e0c;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease-in;
+    }
+    header img {
+      height: 100px;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #000;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background-image: url('https://i.imgur.com/FuWqFJS.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in;
+    }
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 20px;
+    }
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+      animation: fadeUp 1s ease-in;
+    }
+    .productos {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .producto {
+      border: 2px solid #ec4e0c;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+    .producto:hover {
+      transform: scale(1.05);
+    }
+    .producto h3 {
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #ec4e0c;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #000;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo mp.png" alt="Maestro Palomero Logo">
+    <h1>Maestro Palomero</h1>
+    <p>Un sabor que nace del corazón y evoluciona con estilo</p>
+  </header>
+
+  <nav>
+    <a href="#sabores">Sabores</a>
+    <a href="#destacados">Destacados</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#filosofia">Filosofía</a>
+    <a href="#pedidos">Pedidos</a>
+  </nav>
+
+  <section class="hero">
+    <h1>El arte de compartir sabor</h1>
+    <p>Disfruta una experiencia pensada para todos tus sentidos. Maestro Palomero está diseñado para vivirse con la vista, el oído, el olfato, el tacto y el gusto.</p>
+  </section>
+
+  <section id="destacados" class="section">
+    <h2>Favoritos de la casa</h2>
+    <div class="productos">
+      <div class="producto">
+        <h3>Caramelo</h3>
+        <p>Una mezcla perfecta entre dulzura y textura que evoca momentos especiales.</p>
+      </div>
+      <div class="producto">
+        <h3>Queso</h3>
+        <p>Cremosidad reconfortante con notas intensas que conquistan cualquier paladar.</p>
+      </div>
+      <div class="producto">
+        <h3>Naturales</h3>
+        <p>El equilibrio puro entre ligereza y frescura. El sabor del maíz real.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sabores" class="section">
+    <h2>Todos nuestros sabores</h2>
+    <div class="productos">
+      <div class="producto"><h3>Caramelo</h3><p>Dulce tradicional que acaricia la memoria con cada bocado.</p></div>
+      <div class="producto"><h3>Arcoíris</h3><p>Una explosión visual y gustativa que transforma tu día.</p></div>
+      <div class="producto"><h3>Queso</h3><p>Intenso, envolvente y lleno de carácter.</p></div>
+      <div class="producto"><h3>Queso Jalapeño</h3><p>El toque justo entre cremoso y picante, con identidad mexicana.</p></div>
+      <div class="producto"><h3>Chipotle</h3><p>Una experiencia ahumada que se queda contigo.</p></div>
+      <div class="producto"><h3>Naturales</h3><p>Ligereza total. Perfectas para combinar o disfrutar solas.</p></div>
+    </div>
+  </section>
+
+  <section id="nosotros" class="section">
+    <h2>¿Quiénes somos?</h2>
+    <p>Maestro Palomero nace en la Ciudad de México con una visión clara: transformar una botana cotidiana en una experiencia sensorial inolvidable. Inspirados por los sabores que reconfortan, elevamos lo sencillo a una expresión de cuidado, calidad y presencia.</p>
+    <p>Si quieres tener Maestro Palomero en tu tienda o negocio, contáctanos y hazlo parte de tu comunidad.</p>
+  </section>
+
+  <section id="filosofia" class="section">
+    <h2>Nuestra filosofía</h2>
+    <p>Maestro Palomero existe porque creemos en el poder del detalle. De cómo lo más cotidiano puede convertirse en algo memorable cuando se hace con intención. Nuestra pasión por las palomitas se convirtió en un lenguaje propio, hecho de aromas, texturas y emociones.</p>
+    <h3>Misión</h3>
+    <p>Ofrecer palomitas que representen algo más que sabor: una conexión, una pausa, un apapacho. Productos que hablen por sí solos a través de su esencia.</p>
+    <h3>Visión</h3>
+    <p>Ser la marca de referencia en México para quienes buscan una botana con identidad, elegancia y corazón.</p>
+  </section>
+
+  <section id="pedidos" class="section">
+    <h2>Haz tu pedido</h2>
+    <p>¿Listo para vivir la experiencia Palomero? Escríbenos por WhatsApp y haz tu pedido o solicita distribución para tu negocio.</p>
+    <a href="https://wa.me/525611612667" target="_blank" class="btn">Pedir por WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Maestro Palomero — CDMX. Cada bocado, una historia. Cada bolsa, una experiencia.</p>
+  </footer>
+
+</body>
+</html>
